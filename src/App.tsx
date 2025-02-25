@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import SplashScreen from "./components/SplashScreen"; // ✅ Added splash screen
 import { Wallet } from "lucide-react";
 import { ExpenseForm } from "./components/ExpenseForm";
@@ -10,7 +10,7 @@ import ExpenseTabs from "./components/ExpenseTabs";
 import RecentExpenses from "./components/RecentExpenses";
 import { Expense, defaultCategories } from "./types";
 import LiveClock from "./components/LiveClock";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 import MonthlyTrends from "./components/MonthlyTrends";
 
 function App() {

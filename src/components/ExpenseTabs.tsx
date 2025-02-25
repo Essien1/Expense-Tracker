@@ -1,6 +1,6 @@
   import React from "react";
   // import DownloadReportButton from "./DownloadReportButton";
-  import { BarChart3, Folder, LineChart, Trash2 } from "lucide-react";
+  import { BarChart3, Folder, LineChart } from "lucide-react";
 
   interface ExpenseTabsProps {
     activeTab: string;
@@ -9,7 +9,7 @@
     onDeleteExpense: (id: string) => void;
   }
 
-  const ExpenseTabs: React.FC<ExpenseTabsProps> = ({ activeTab, setActiveTab, expenses, onDeleteExpense }) => {
+  const ExpenseTabs: React.FC<ExpenseTabsProps> = ({ activeTab, setActiveTab}) => {
     const tabs = [
       { name: "Overview", icon: <BarChart3 className="inline-block w-5 h-5 mr-2" /> },
       { name: "Categories", icon: <Folder className="inline-block w-5 h-5 mr-2" /> },

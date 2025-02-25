@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { Expense, defaultCategories } from "../types";
 import { formatCurrency } from "../utils/formatCurrency";
 

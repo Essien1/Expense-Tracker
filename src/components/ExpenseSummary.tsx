@@ -1,5 +1,5 @@
 import { formatCurrency } from "../utils/formatCurrency";
-import LiveClock from "./LiveClock";
+// import LiveClock from "./LiveClock";
 
 interface ExpenseSummaryProps {
   setShowTransactionHistory: (value: boolean) => void;
@@ -15,7 +15,6 @@ const ExpenseSummary: React.FC<ExpenseSummaryProps> = ({ setShowTransactionHisto
       {/* Header with Live Clock */}
       <div className="flex flex-col sm:flex-row justify-between items-center mb-4">
         <h2 className="text-lg sm:text-xl md:text-2xl font-bold">Expense Summary</h2>
-        {/* <LiveClock /> */}
       </div>
 
       {/* Summary Grid */}
