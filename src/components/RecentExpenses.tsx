@@ -34,7 +34,7 @@ const RecentExpenses: React.FC<RecentExpensesProps> = ({ expenses, onDeleteExpen
                 <td className="px-2 py-2">
                   {defaultCategories.find((cat) => cat.id === expense.category)?.name || "Unknown"}
                 </td>
-                <td className="px-2 py-2">₦{formatCurrency(expense.amount)}</td>
+                <td className="px-2 py-2">{formatCurrency(expense.amount)}</td>
                 <td className="px-2 py-2">
                   <button
                     onClick={() => onDeleteExpense(expense.id)}
